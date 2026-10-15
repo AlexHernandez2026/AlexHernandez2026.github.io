@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(10, 6, 230);
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -61,7 +61,7 @@
 
         // changes the text displayed on the Box
         function changeBoxText(newText) {
-          box.text(newText);
+          box.text(newText); 
         }
 
         //////////////////////////////////////////////////////////////////
@@ -69,10 +69,8 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-      var exampleVariable = 5;
-
-
-
+      var positionX = 0; 
+      var points = 0; 
 
         /**
          * This Function will be called 20 times/second.
@@ -80,8 +78,8 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-       moveBoxTo(Position);
-      PositionX += 10;
+       moveBoxTo(positionX);
+       positionX += 10;
           
         }
 
@@ -93,7 +91,7 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
+         positionX = 0; 
 
 
 
