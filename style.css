@@ -95,7 +95,7 @@ border-color: #000;
 transform: translateY(-2px);
 }
 .sidebar-img {
-width: 30%;
+width: 80%;
 max-width: 760px;
 aspect-ratio: 3 / 4;
 object-fit: cover;
